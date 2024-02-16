@@ -15,6 +15,7 @@ class SearchController
         $template->setTemplate('search');
 
         $formData = $request->getParsedBody()['search'] ?? '';
+        
 
         $template->setData(['searchTerm' => $formData]);
 
